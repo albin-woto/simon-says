@@ -1,13 +1,24 @@
 body {
   margin: 0;
-  background: #dedede;
-  display: flex;
-  align-items: center;
-  height: 100vh;
 }
 
 * {
   font-family: 'Mansalva', cursive;
+}
+
+.container {
+  background: #dedede;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container > h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+  color: #2c3e50;
 }
 
 .gameboard {
@@ -74,7 +85,7 @@ body {
   color: #2c3e50;
   font-size: 2.5rem;
   position: absolute;
-  top: calc(50% - 50px);
+  top: 50%;
   left: calc(50% - 200px);
 }
 
